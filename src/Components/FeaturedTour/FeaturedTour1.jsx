@@ -47,11 +47,11 @@ const FeaturedTour1 = () => {
       };       
 
       const tourContent = [
-        {img:'/assets/img/feature/01.jpg', location:'Hy Lạp', title:'Golden Visa Hy Lạp'},                  
-        {img:'/assets/img/feature/02.jpg', location:'Hoa Kỳ', title:'Các diện định cư Hoa Kỳ'},                  
-        {img:'/assets/img/feature/03.jpg', location:'Thổ Nhĩ Kỳ', title:'CBI Thổ Nhĩ Kỳ'},                  
-        {img:'/assets/img/feature/04.jpg', location:'Síp', title:'Thường trú nhân đảo Síp'},
-        {img:'/assets/img/feature/skn.jpg', location:'St. Kitts & Nevis', title:'CBI Saint Kitts & Nevis'}                             
+        {img:'/assets/img/feature/01.jpg', location:'Hy Lạp', title:'Hy Lạp'},                  
+        {img:'/assets/img/feature/02.jpg', location:'Hoa Kỳ', title:'Hoa Kỳ'},                  
+        {img:'/assets/img/feature/03.jpg', location:'Thổ Nhĩ Kỳ', title:'Thổ Nhĩ Kỳ'},                  
+        {img:'/assets/img/feature/04.jpg', location:'Síp', title:'Đảo Síp'},
+        {img:'/assets/img/feature/skn.jpg', location:'St. Kitts & Nevis', title:'Saint Kitts & Nevis'}                             
       ]; 
 
 

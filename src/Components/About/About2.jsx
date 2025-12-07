@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 const About2 = () => {
     return (
-<section className="about-section section-padding fix">
+<section className="about-section section-padding fix" id="about">
             <div className="container">
                 <div className="about-wrapper-2">
                     <div className="row g-4">
@@ -61,7 +61,7 @@ const About2 = () => {
                                     </div>
                                     <div className="text">
                                         <p>
-                                            18+ năm kinh nghiệm
+                                            Đội ngũ dày dặn kinh nghiệm
                                         </p>
                                     </div>
                                 </div>

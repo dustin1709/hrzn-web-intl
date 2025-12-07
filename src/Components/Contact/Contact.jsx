@@ -9,16 +9,17 @@ const Contact = () => {
                 <div className="row">
                     <div className="col-xl-4 col-lg-6 col-md-6">
                         <div className="contact-us-main">
-                            <div className="contact-box-items">
+                            <div className="contact-box-items" style={{height: '320px'}}>
                                 <div className="icon">
                                     <img src="/assets/img/icon/18.svg" alt="img" />
                                 </div>
                                 <div className="content">
                                     <h3>
-                                        Our Address
+                                        Địa chỉ
                                     </h3>
-                                    <p>
-                                        2464 Royal Ln. Mesa, New Jersey 45463.
+                                    <p style={{fontSize: '90%'}}>
+                                        207A Nguyễn Văn Thủ, Tân Định, TP Hồ Chí Minh 700000 <br />
+                                        35 Lê Văn Lương, Thanh Xuân, Hà Nội 100000
                                     </p>
                                 </div>
                             </div>
@@ -26,16 +27,16 @@ const Contact = () => {
                     </div>
                     <div className="col-xl-4 col-lg-6 col-md-6">
                         <div className="contact-us-main style-2">
-                            <div className="contact-box-items">
+                            <div className="contact-box-items" style={{height: '320px'}}>
                                 <div className="icon">
                                     <img src="/assets/img/icon/19.svg" alt="img" />
                                 </div>
                                 <div className="content">
                                     <h3>
-                                        <a href="mailto:info@tripco.com">info@tripco.com</a>
+                                        <a href="mailto:tuvan@horizonimmi.com" style={{fontSize: '80%'}}>tuvan@horizonimmi.com</a>
                                     </h3>
-                                    <p>
-                                        Email us anytime for anykind <br/> ofquety.
+                                    <p style={{fontSize: '90%'}}>
+                                    Đội ngũ Horizon sẽ trân trọng tiếp nhận và phản hồi trong thời gian sớm nhất.
                                     </p>
                                 </div>
                             </div>
@@ -43,16 +44,16 @@ const Contact = () => {
                     </div>
                     <div className="col-xl-4 col-lg-6 col-md-6">
                         <div className="contact-us-main">
-                            <div className="contact-box-items">
+                            <div className="contact-box-items" style={{height: '320px'}}>
                                 <div className="icon">
                                     <img src="/assets/img/icon/20.svg" alt="img" />
                                 </div>
                                 <div className="content">
                                     <h3>
-                                        <a href="tel:Hot+208-666-0112">Hot:+208-666-0112</a>
+                                        <a href="tel:+84796177999">+84 79 617 7999</a>
                                     </h3>
-                                    <p>
-                                        Call us any kind suppor,we will wait for it.
+                                    <p style={{fontSize: '90%'}}>
+                                    Quý khách có thể liên hệ trực tiếp qua đường dây hỗ trợ để được phục vụ nhanh chóng và tận tâm bởi đội ngũ Horizon.
                                     </p>
                                 </div>
                             </div>
@@ -70,38 +71,35 @@ const Contact = () => {
                             <div className="contact-us-contact">
                                 <div className="section-title">
                                     <span className="sub-title text-white wow fadeInUp">
-                                        Contact us
+                                        Đăng ký tư vấn
                                     </span>
-                                    <h2 className=" text-white wow fadeInUp wow" data-wow-delay=".2s">
-                                        Send Message Anytime
-                                    </h2>
                                 </div>
                                 <div className="comment-form-wrap">
                                     <form action="#" id="contact-form" method="POST">
                                         <div className="row g-4">
                                             <div className="col-lg-6">
                                                 <div className="form-clt">
-                                                    <input type="text" name="name" id="name" placeholder="Your Name" />
+                                                    <input type="text" name="name" id="name" placeholder="Tên" />
                                                 </div>
                                             </div>
                                             <div className="col-lg-6">
                                                 <div className="form-clt">
-                                                    <input type="text" name="email" id="email4" placeholder="Your Email" />
+                                                    <input type="text" name="email" id="email4" placeholder="Email" />
                                                 </div>
                                             </div>
                                             <div className="col-lg-12">
                                                 <div className="form-clt">
-                                                   <input type="text" name="subject" id="name" placeholder="Subject" />
+                                                   <input type="text" name="subject" id="name" placeholder="Chủ đề" />
                                                 </div>
                                             </div>
                                             <div className="col-lg-12">
                                                 <div className="form-clt">
-                                                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                                                    <textarea name="message" id="message" placeholder="Nhu cầu khách hàng"></textarea>
                                                 </div>
                                             </div>
                                             <div className="col-lg-6">
-                                                <button type="submit" className="theme-btn">
-                                                    Submit Massage
+                                                <button type="submit" className="theme-btn" style={{backgroundColor: '#94890c'}}>
+                                                    Gửi
                                                 </button>
                                             </div>
                                         </div>
@@ -112,7 +110,7 @@ const Contact = () => {
                         <div className="col-lg-6">
                             <div className="map-area">
                                 <div className="google-map">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6678.7619084840835!2d144.9618311901502!3d-37.81450084255415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4758afc1d%3A0x3119cc820fdfc62e!2sEnvato!5e0!3m2!1sen!2sbd!4v1641984054261!5m2!1sen!2sbd"loading="lazy"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.995496530247!2d105.79927551010809!3d21.00314048857867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac9f543a5139%3A0xe4bcbda75f6e055a!2zMzUgxJAuIEzDqiBWxINuIEzGsMahbmcsIE5ow6JuIENow61uaCwgVGhhbmggWHXDom4sIEjDoCBO4buZaSwgVmlldG5hbQ!5e1!3m2!1sen!2s!4v1765128353743!5m2!1sen!2s"loading="lazy"></iframe>
                                 </div>
                             </div>
                         </div>

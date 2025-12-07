@@ -8,7 +8,7 @@ const Choose2 = () => {
             }, []);
 
     return (
-        <section className="choose-us-section section-padding bg-cover fix" data-background="/assets/img/choose-us-bg-2.jpg" >
+        <section className="choose-us-section section-padding bg-cover fix" data-background="/assets/img/choose-us-bg-2.jpg" id="customerexp" >
             <div className="container">
                 <div className="choose-us-wrapper">
                     <div className="row g-4 align-items-center">
@@ -30,12 +30,9 @@ const Choose2 = () => {
                                 Horizon – đồng hành bằng kinh nghiệm, dẫn lối bằng sự thấu hiểu. 
                                 </p>
                                 <div className="choose-us-area">
-                                    <div className="line-shape">
-                                        <img src="/assets/img/line-shape2.png" alt="img" />
-                                    </div>
                                     <div className="choose-us-items wow fadeInUp wow" data-wow-delay=".3s">
                                         <h3 className="number">
-                                            01
+                                            1
                                         </h3>
                                         <div className="content">
                                             <h4>
@@ -48,7 +45,7 @@ const Choose2 = () => {
                                     </div>
                                     <div className="choose-us-items wow fadeInUp wow" data-wow-delay=".5s">
                                         <h3 className="number">
-                                            02
+                                            2
                                         </h3>
                                         <div className="content">
                                             <h4>
@@ -61,7 +58,7 @@ const Choose2 = () => {
                                     </div>
                                     <div className="choose-us-items wow fadeInUp wow" data-wow-delay=".7s">
                                         <h3 className="number">
-                                            03
+                                            3
                                         </h3>
                                         <div className="content">
                                             <h4>

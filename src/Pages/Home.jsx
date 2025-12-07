@@ -3,7 +3,7 @@ import HeroBanner2 from '../Components/HeroBanner/HeroBanner2';
 import About2 from '../Components/About/About2';
 import Choose2 from '../Components/Choose/Choose2';
 import FeaturedTour1 from '../Components/FeaturedTour/FeaturedTour1';
-import Blog2 from '../Components/Blog/Blog2';
+import Blog2 from '../Components/Blog/BanTinTomTat';
 
 const Home = () => {
     return (

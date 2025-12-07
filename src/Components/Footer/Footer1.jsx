@@ -50,12 +50,12 @@ const Footer1 = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/about">
+                                        <Link to="/news">
                                             Bản tin 
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/about">
+                                        <Link to="/binhluan">
                                             Bình luận 
                                         </Link>
                                     </li>
@@ -85,12 +85,12 @@ const Footer1 = () => {
                                     </li>
                                     <li>
                                     <Link to="/tour/tour-details">
-                                            CBI Thổ Nhĩ Kỳ
+                                            Thổ Nhĩ Kỳ
                                     </Link>
                                     </li>
                                     <li>
                                     <Link to="/tour/tour-details">
-                                            CBI Caribe
+                                            Caribe
                                     </Link>
                                     </li>
                                 </ul>
@@ -104,8 +104,13 @@ const Footer1 = () => {
                                 <div className="contact-info">
                                     <div className="contact-items">
                                         <div className="content">
-                                            <h6>207A Nguyễn Văn Thủ, Phường Tân Định, <br/>
+                                            <h6>
+                                                207A Nguyễn Văn Thủ, Phường Tân Định,
                                                 TP Hồ Chí Minh, Việt Nam
+                                            </h6>
+                                            <h6>
+                                                35 Lê Văn Lương, Phường Thanh Xuân,
+                                                Hà Nội, Việt Nam
                                             </h6>
                                         </div>
                                     </div>

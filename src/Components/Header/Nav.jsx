@@ -1,7 +1,20 @@
 import DropDown from './DropDown';
 import { Link } from "react-router";
+import { HashLink } from 'react-router-hash-link';
 
 export default function Nav({ setMobileToggle }) {
+
+  const NavChild = [
+        {name: 'usa', title: 'Hoa Kỳ'},   
+        {name: 'greece', title: 'Hy Lạp'},  
+        {name: 'cyprus', title: 'Đảo Síp'},    
+        {name: 'turkey', title: 'Thổ Nhĩ Kỳ'},
+        {name: 'malta', title: 'Malta'},       
+        {name: 'caribe', title: 'Các quốc đảo Caribe'},     
+        {name: 'canada', title: 'Canada'},
+        {name: 'newzealand', title: 'New Zealand'},
+  ]
+
   return (
     <ul className="cs_nav_list fw-medium">
       <li className="menu-item-has-children">
@@ -9,70 +22,35 @@ export default function Nav({ setMobileToggle }) {
         <DropDown>
           <ul>
             <li>
-              <Link to="/" onClick={() => setMobileToggle(false)}>
+              <HashLink to={"/#about"}>
               Giới thiệu Công ty
-              </Link>
+              </HashLink>
             </li>
             <li>
-              <Link to="/" onClick={() => setMobileToggle(false)}>
+              <HashLink to={"/#customerexp"}>
               Trải nghiệm khách hàng
-              </Link>
+              </HashLink>
             </li>
-            {/* <li>
-              <Link to="/home2" onClick={() => setMobileToggle(false)}>
-              Home Version 2
-              </Link>
-            </li>
-            <li>
-              <Link to="/home3" onClick={() => setMobileToggle(false)}>
-                Home Version 3
-              </Link>
-            </li>             */}
           </ul>
         </DropDown>
       </li>
 
       <li className="menu-item-has-children">
-        <Link to="/destination" onClick={() => setMobileToggle(false)}>
+        <Link to="/dinhcu" onClick={() => setMobileToggle(false)}>
         Định cư
         </Link>
         <DropDown>
           <ul>
-            <li>
-              <Link to="/destination" onClick={() => setMobileToggle(false)}>
-              Hoa Kỳ
-              </Link>
-            </li>
-            <li>
-              <Link to="/destination" onClick={() => setMobileToggle(false)}>
-              Hy Lạp
-              </Link>
-            </li>
-            <li>
-              <Link to="/destination" onClick={() => setMobileToggle(false)}>
-              Thổ Nhĩ Kỳ
-              </Link>
-            </li>
-            <li>
-              <Link to="/destination" onClick={() => setMobileToggle(false)}>
-              Síp (Cyprus)
-              </Link>
-            </li>
-            <li>
-              <Link to="/destination" onClick={() => setMobileToggle(false)}>
-              Caribe
-              </Link>
-            </li>
-            <li>
-              <Link to="/destination" onClick={() => setMobileToggle(false)}>
-              New Zealand
-              </Link>
-            </li>
-            <li>
-              <Link to="/destination" onClick={() => setMobileToggle(false)}>
-              Canada
-              </Link>
-            </li>
+            {
+              NavChild.map((item, i) => (
+                <li key={i}>
+                <HashLink to={`/dinhcu/#${item.name}`} onClick={() => setMobileToggle(false)}>
+                  {item.title}
+                </HashLink>
+                </li>
+              )
+              
+            )}
           </ul>
         </DropDown>
       </li>
@@ -84,19 +62,19 @@ export default function Nav({ setMobileToggle }) {
       </li> 
       
       <li>
-        <Link to="/blog" onClick={() => setMobileToggle(false)}>
+        <Link to="/news" onClick={() => setMobileToggle(false)}>
           Bản tin
         </Link>
       </li>        
 
       <li>
-        <Link to="/blog-sidebar" onClick={() => setMobileToggle(false)}>
-          Bình luận
+        <Link to="/rating" onClick={() => setMobileToggle(false)}>
+          Đánh giá
         </Link>
       </li>
-      
+
       <li>
-        <Link to="/contact" onClick={() => setMobileToggle(false)}>
+        <Link to="/events" onClick={() => setMobileToggle(false)}>
           Sự kiện
         </Link>
       </li>

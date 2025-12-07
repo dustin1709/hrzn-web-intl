@@ -14,7 +14,7 @@ const HeroBanner2 = () => {
             <div className="hero-2 bg-cover" data-background="/assets/img/hero/hero2.jpg">
                 <div className="container custom-container-3">
                     <div className="row">
-                        <div className="col-lg-6">
+                        <div className="col-lg-9">
                             <div className="hero-content">
                                 <div className="sub-title wow fadeInUp">
                                     "Navigate Your Next Horizons"
