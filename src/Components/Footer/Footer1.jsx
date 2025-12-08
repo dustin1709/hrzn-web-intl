@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router';
+import { HashLink } from 'react-router-hash-link';
 import loadBackgroudImages from '../Common/loadBackgroudImages';
 
 const Footer1 = () => {
@@ -45,18 +46,28 @@ const Footer1 = () => {
                                 </div>
                                 <ul className="list-items">
                                     <li>
-                                        <Link to="/">
+                                        <HashLink to="/#home">
                                             Trang chủ
-                                        </Link>
+                                        </HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/news">
+                                        <HashLink to="/news/#latest-news">
                                             Bản tin 
+                                        </HashLink>
+                                    </li>
+                                    <li>
+                                        <Link to="/rating">
+                                            Bình luận 
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/binhluan">
-                                            Bình luận 
+                                        <Link to="/events">
+                                            Sự kiện
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/contact">
+                                            Liên hệ
                                         </Link>
                                     </li>
                                 </ul>
@@ -69,29 +80,29 @@ const Footer1 = () => {
                                 </div>
                                 <ul className="list-items">
                                     <li>
-                                    <Link to="/tour/tour-details">
+                                    <HashLink to="/dinhcu/#usa">
                                             Định cư Hoa Kỳ  
-                                    </Link>
+                                    </HashLink>
                                     </li>
                                     <li>
-                                    <Link to="/tour/tour-details">
-                                            Golden Visa Hy Lạp
-                                    </Link>
+                                    <HashLink to="/dinhcu/#greece">
+                                            Thường trú nhân Hy Lạp
+                                    </HashLink>
                                     </li>
                                     <li>
-                                    <Link to="/tour/tour-details">
-                                            Thường trú nhân Síp
-                                    </Link>
+                                    <HashLink to="/dinhcu/#cyprus">
+                                            Thường trú nhân Síp (Cyprus)
+                                    </HashLink>
                                     </li>
                                     <li>
-                                    <Link to="/tour/tour-details">
+                                    <HashLink to="/dinhcu/#turkey">
                                             Thổ Nhĩ Kỳ
-                                    </Link>
+                                    </HashLink>
                                     </li>
                                     <li>
-                                    <Link to="/tour/tour-details">
+                                    <HashLink to="/dinhcu/#caribe">
                                             Caribe
-                                    </Link>
+                                    </HashLink>
                                     </li>
                                 </ul>
                             </div>

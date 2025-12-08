@@ -11,8 +11,9 @@ const Blog4 = () => {
       ];
 
     return (
-        <section className="news-section section-padding fix">
+        <section id="latest-news" className="news-section section-padding fix">
             <div className="container">
+                <h2>Chính sách & thị trường: Tin tức mới nhất</h2>
                 <div className="row g-4">
                 {blogContent.map((item, i) => (
                     <div key={i} className="col-xl-4 col-md-6 col-lg-6 wow fadeInUp" data-wow-delay=".3s">

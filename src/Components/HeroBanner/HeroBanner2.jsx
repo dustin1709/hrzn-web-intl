@@ -10,7 +10,7 @@ const HeroBanner2 = () => {
         const [isActive, setIsActive] = useState('tour');
 
     return (
-<section className="hero-section-2">
+<section className="hero-section-2" id="home">
             <div className="hero-2 bg-cover" data-background="/assets/img/hero/hero2.jpg">
                 <div className="container custom-container-3">
                     <div className="row">

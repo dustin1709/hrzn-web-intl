@@ -78,6 +78,15 @@ export default function Nav({ setMobileToggle }) {
           Sự kiện
         </Link>
       </li>
+      <li className='show-btn'>
+      <div className="header-btn d-flex align-items-center">
+                <div className="main-button header-btn-1">
+                <Link to="/contact" className='theme-btn'>
+                <span> Liên hệ tư vấn <i className="bi bi-arrow-right"></i></span></Link>
+                  </div>
+
+              </div>
+      </li>
     </ul>
   );
 }

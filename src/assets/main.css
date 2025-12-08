@@ -10020,8 +10020,18 @@ input.main-search-input::placeholder {
   padding: 5px;
 }
 
+.show-btn {
+  display: none;
+}
+
 @media (max-width: 950px) {
   .grid-dinhcu {
     grid-template-columns: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .show-btn {
+    display: block;
+    padding: 10px;
   }
 }

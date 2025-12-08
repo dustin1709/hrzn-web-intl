@@ -7,7 +7,7 @@ const BlogGrid = () => {
         <div>
              <BreadCumb
                 bgimg="/assets/img/breadcrumb/breadcrumb.png"
-                Title="Tin tức mới nhất"
+                Title="Bản tin"
             ></BreadCumb> 
             <Blog4></Blog4>          
         </div>
