@@ -83,7 +83,14 @@ const About2 = () => {
                                     </div>
                                 </div>
                                 <Link to="/contact" className="theme-btn wow fadeInUp wow" data-wow-delay=".7s">Liên hệ tư vấn 1:1<i className="bi bi-arrow-right"></i></Link>
+                                <div>
+                                <h1 style={{fontSize: '10%', color: '#fcfdff'}}>Định cư Horizon</h1>
+                                <h1 style={{fontSize: '10%', color: '#fcfdff'}}>Horizon Immigration</h1>
+                                <h1 style={{fontSize: '10%', color: '#fcfdff'}}>Horizon Di Trú</h1>
+                                <h1 style={{fontSize: '10%', color: '#fcfdff'}}>Di Trú Horizon</h1>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
