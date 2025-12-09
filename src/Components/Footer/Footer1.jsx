@@ -76,22 +76,22 @@ const Footer1 = () => {
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 ps-lg-5 wow fadeInUp wow" data-wow-delay=".6s">
                             <div className="single-widget-items">
                                 <div className="widget-head">
-                                   <h4>Dịch vụ</h4>
+                                   <h4>Sản Phẩm</h4>
                                 </div>
                                 <ul className="list-items">
                                     <li>
                                     <HashLink to="/dinhcu/#usa">
-                                            Định cư Hoa Kỳ  
+                                            Hoa Kỳ  
                                     </HashLink>
                                     </li>
                                     <li>
                                     <HashLink to="/dinhcu/#greece">
-                                            Thường trú nhân Hy Lạp
+                                            Hy Lạp
                                     </HashLink>
                                     </li>
                                     <li>
                                     <HashLink to="/dinhcu/#cyprus">
-                                            Thường trú nhân Síp (Cyprus)
+                                            Síp (Cyprus)
                                     </HashLink>
                                     </li>
                                     <li>
