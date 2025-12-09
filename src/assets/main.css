@@ -3734,14 +3734,8 @@ span {
   margin-bottom: 30px;
 }
 .choose-us-wrapper .choose-us-content .choose-us-area .choose-us-items .number {
-  width: 112px;
-  height: 56px;
-  line-height: 56px;
-  border-radius: 56px;
-  text-align: center;
-  color: #f4f078;
-  background-color: var(--theme);
-  font-size: 28px;
+  font-size: 230%;
+  color: var(--theme);
 }
 .choose-us-wrapper .choose-us-content .choose-us-area .choose-us-items .content h4 {
   font-size: 20px;

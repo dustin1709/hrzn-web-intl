@@ -1,6 +1,22 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const [status, setStatus] = useState("");
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_klgrj2j', 'template_imw5zts', form.current, 'M5TtKtRs8bT0HOg2H')
+        .then(() => {
+                console.log('SUCCESS!');
+                setStatus("Yêu cầu của khách hàng " + form.current.user_name.value + " đã được gửi đến email Horizon.");
+            },
+            (error) => {
+                console.log('FAILED...', error.text);
+                console.log(form.current.user_email.value);
+            },
+        );
+    };
     return (
         <div>
             
@@ -75,31 +91,32 @@ const Contact = () => {
                                     </span>
                                 </div>
                                 <div className="comment-form-wrap">
-                                    <form action="#" id="contact-form" method="POST">
+                                    <form ref={form} onSubmit={sendEmail} id="contact-form">
+                                        <p>{status}</p>
                                         <div className="row g-4">
-                                            <div className="col-lg-6">
+                                            <div className="col-lg-12">
                                                 <div className="form-clt">
-                                                    <input type="text" name="name" id="name" placeholder="Tên" />
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-6">
-                                                <div className="form-clt">
-                                                    <input type="text" name="email" id="email4" placeholder="Email" />
+                                                    <input type="text" name="user_name" id="name" placeholder="Họ và tên" />
                                                 </div>
                                             </div>
                                             <div className="col-lg-12">
                                                 <div className="form-clt">
-                                                   <input type="text" name="subject" id="name" placeholder="Chủ đề" />
+                                                    <input type="text" name="user_email" id="email4" placeholder="Email" />
                                                 </div>
                                             </div>
                                             <div className="col-lg-12">
                                                 <div className="form-clt">
-                                                    <textarea name="message" id="message" placeholder="Nhu cầu khách hàng"></textarea>
+                                                   <input type="text" name="user_subject" id="name" placeholder="Chủ đề" />
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-12">
+                                                <div className="form-clt">
+                                                    <textarea name="user_message" id="message" placeholder="Nhu cầu khách hàng"></textarea>
                                                 </div>
                                             </div>
                                             <div className="col-lg-6">
-                                                <button type="submit" className="theme-btn" style={{backgroundColor: '#94890c'}}>
-                                                    Gửi
+                                                <button type="submit" value="Send" className="theme-btn" style={{backgroundColor: '#94890c'}}>
+                                                    Gửi yêu cầu
                                                 </button>
                                             </div>
                                         </div>

@@ -1,13 +1,44 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router';
 import { HashLink } from 'react-router-hash-link';
 import loadBackgroudImages from '../Common/loadBackgroudImages';
+import emailjs from '@emailjs/browser';
 
 const Footer1 = () => {
+
+    const [status, setStatus] = useState("");
 
     useEffect(() => {
         loadBackgroudImages();
     }, []);
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+        .sendForm('service_klgrj2j', 'template_yyibz6y', form.current, 'M5TtKtRs8bT0HOg2H').then(() => {
+                console.log('SUCCESS!');
+                setStatus("Yêu cầu đã được gửi đến hòm thư Horizon.");
+            },
+            (error) => {
+                console.log('FAILED...', error.text);
+                console.log(form.current.user_email.value);
+                setStatus("Xin lỗi, email không hợp lệ.");
+            },
+        );
+        emailjs
+        .sendForm('service_klgrj2j', 'template_imw5zts', form.current, 'M5TtKtRs8bT0HOg2H').then(() => {
+                console.log('SUCCESS!');
+                setStatus("Yêu cầu đã được gửi đến email Horizon.");
+            },
+            (error) => {
+                console.log('FAILED...', error.text);
+                console.log(form.current.user_email.value);
+            },
+        );
+    };
 
     return (
         <footer className="footer-section fix bg-cover" data-background="/assets/img/footer/footer-bg.jpg">
@@ -24,12 +55,15 @@ const Footer1 = () => {
                                 <div className="footer-content">
                                     <h3>Đăng ký Bản tin</h3>
                                     <p style={{padding: "2%"}}>Cập nhật thông tin mới nhất về chính sách và xu hướng định cư ngay hôm nay!</p>
+                                    <form ref={form} onSubmit={sendEmail}>
                                     <div className="footer-input">
-                                        <input type="email" id="email2" placeholder="Email" />
-                                        <button className="newsletter-btn theme-btn" type="submit">
+                                        <input type="email" id="email2" name="user_email" placeholder="Email" />
+                                        <button className="newsletter-btn theme-btn" type="submit" value="Send">
                                             Đăng ký <i className="bi bi-arrow-right"></i>
                                         </button>
                                     </div>
+                                    </form>
+                                    <p>{status}</p>
                                     <div className="social-icon d-flex align-items-center justify-content-center">
                                         <a href="#"><i className="bi bi-facebook"></i></a>
                                         <a href="#"><i className="bi bi-twitter-x"></i></a>
@@ -128,7 +162,7 @@ const Footer1 = () => {
                                     <div className="contact-items">
                                         <div className="content">
                                          <h6>
-                                             <a href="mailto:info@touron.com">tuvan@horizonimmi.com</a> 
+                                             <a href="mailto:tuvan@horizonimmi.com">tuvan@horizonimmi.com</a> 
                                          </h6>
                                       </div>
                                     </div>
@@ -144,6 +178,7 @@ const Footer1 = () => {
                         </div>
                      </div>
                 </div>
+                <div style={{padding: '1.2%', clear: 'both'}}></div>
                 <div className="footer-bottom">
                     <div className="footer-wrapper">
                         <p className="wow fadeInUp" data-wow-delay=".3s">

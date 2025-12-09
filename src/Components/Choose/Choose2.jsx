@@ -38,7 +38,7 @@ const Choose2 = () => {
                                             <h4>
                                             Tư vấn minh bạch và thực tế
                                             </h4>
-                                            <p>
+                                            <p style={{width: '85%'}}>
                                             Mỗi nhà đầu tư được cung cấp thông tin đầy đủ về chương trình định cư, chi phí, thời gian và các rủi ro tiềm ẩn. Horizon cam kết không hứa hẹn quá mức mà dựa trên kinh nghiệm thực tế đã trải qua.
                                             </p>
                                         </div>
@@ -51,12 +51,12 @@ const Choose2 = () => {
                                             <h4>
                                             Hỗ trợ toàn diện về thủ tục và hồ sơ
                                             </h4>
-                                            <p>
+                                            <p style={{width: '85%'}}>
                                             Horizon hướng dẫn từng bước chuẩn bị hồ sơ, đảm bảo mọi giấy tờ, quy trình đều minh bạch và đúng chuẩn. Sự chuẩn bị kỹ càng giúp nhà đầu tư giảm áp lực và tránh sai sót không đáng có.
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="choose-us-items wow fadeInUp wow" data-wow-delay=".7s">
+                                    <div className="choose-us-items wow fadeInUp wow" data-wow-delay=".5s">
                                         <h3 className="number">
                                             3
                                         </h3>
@@ -64,8 +64,10 @@ const Choose2 = () => {
                                             <h4>
                                             Đồng hành và hỗ trợ tâm lý
                                             </h4>
-                                            <p>
-                                            Nhà đầu tư được hỗ trợ về mặt tâm lý—từ việc thích nghi với môi trường mới, giải đáp thắc mắc lo lắng, đến việc xây dựng kế hoạch ổn định tại nước định cư. Horizon cam kết đồng hành, tạo sự an tâm xuyên suốt hành trình.
+                                            <p style={{width: '85%'}}>
+                                            Nhà đầu tư được hỗ trợ nhiệt tình chu đáo về mặt tâm lý — từ việc thích nghi với môi trường mới, giải đáp thắc mắc lo lắng, đến việc xây dựng kế hoạch ổn định tại nước định cư. 
+                                            <br />
+                                            Horizon cam kết đồng hành, tạo sự an tâm xuyên suốt hành trình.
                                             </p>
                                         </div>
                                     </div>
