@@ -67,7 +67,8 @@ const Footer1 = () => {
                                     <div className="social-icon d-flex align-items-center justify-content-center">
                                         <a href="https://www.facebook.com/horizonimmi/" target="_blank"><i className="bi bi-facebook"></i></a>
                                         <a href="https://x.com/horizon_immi" target="_blank"><i className="bi bi-twitter-x"></i></a>
-                                        <a href="#" target="_blank"><i className="bi bi-linkedin"></i></a>
+                                        <a href="https://www.tiktok.com/@horizonimmi" target="_blank"><i className="bi bi-tiktok"></i></a>
+                                        <a href="https://www.linkedin.com/company/horizon-migration/" target="_blank"><i className="bi bi-linkedin"></i></a>
                                         <a href="https://www.instagram.com/horizon_migration/" target="_blank"><i className="bi bi-instagram"></i></a>
                                     </div>
                                 </div>
